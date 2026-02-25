@@ -1,16 +1,10 @@
-# Legend Cut - Core Dependencies
+# Legend Cut - Python 3.12 Compatible Requirements
 fastapi==0.104.1
-uvicorn==0.24.0
-opencv-python==4.8.1.78
-numpy==1.24.3
-mediapipe==0.10.8
+uvicorn[standard]==0.24.0
+opencv-python==4.9.0.80
+numpy==1.26.3
+mediapipe==0.10.13
 python-multipart==0.0.6
 jinja2==3.1.2
-pillow==10.1.0
-
-# Optional for advanced blending
+pillow==10.2.0
 scipy==1.11.4
-
-# Development Dependencies
-python-dotenv==1.0.0
-watchdog==3.0.0
