@@ -7,7 +7,7 @@
 
 **Legend Cut** is a cutting-edge virtual hair try-on application that uses computer vision to let you experiment with different hairstyles in real-time through your camera.
 
-## ✨ Features
+##  Features
 
 - **Real-time Face Detection** - Powered by MediaPipe for accurate facial landmark tracking
 - **Gender-based Style Selection** - Separate collections for male and female hairstyles
@@ -18,7 +18,7 @@
 - **Head Pose Estimation** - Hairstyles automatically adjust to head movements
 - **Responsive Design** - Works on desktop and mobile devices
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 
@@ -84,7 +84,7 @@ Legend Cut/
 └── README.md                 # This file
 
 
-# 🚨How It Works
+# How It Works
 
 1. **Face Detection** - MediaPipe Face Mesh detects 468 facial landmarks
 2. **Head Pose Estimation**- Calculates head rotation and position
@@ -92,9 +92,9 @@ Legend Cut/
 4. **Haircut Transformation** - Resizes and rotates hairstyle to match head pose
 5. **Alpha Blending**- Seamlessly blends hairsytle with camera feed 
 
-# 🛠️ API Endpoints
+#  API Endpoints
 
-🛠️ API Endpoints
+ API Endpoints
 Endpoint  || Method	||   Description
 /	GET	 || Main     ||application page
 /api/health	|| GET	|| Health check
@@ -105,7 +105,7 @@ Endpoint  || Method	||   Description
 /api/reset-session	|| POST ||	Reset user session
 
 
-# 🎨 Adding Hairstyles
+#  Adding Hairstyles
 
  **Image Requirements**
 
@@ -168,7 +168,7 @@ self.face_mesh = self.mp_face_mesh.FaceMesh(
 * Report bugs: Issues
 
 
-# 🎉 Happy Styling!
+#  Happy Styling!
  
  Transform your look with Legend Cut - Where Style Meets Technology!
 
