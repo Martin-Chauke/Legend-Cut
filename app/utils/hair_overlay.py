@@ -2,7 +2,7 @@
 Legend Cut Hair Overlay Module
 Handles applying and blending hairstyles onto detected faces
 """
-
+import scipy
 import cv2
 import numpy as np
 import os

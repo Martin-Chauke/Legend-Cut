@@ -17,6 +17,7 @@ pythonenv.*
 venv/
 env/
 virtualenv/
+mediapipe_env/
 
 # IDE
 .vscode/
