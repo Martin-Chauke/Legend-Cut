@@ -1,0 +1,489 @@
+/* 
+ * Legend Cut - Inspired by Legends Barber
+ * A bold, professional, and legendary style
+ * Monochrome Black & White Edition
+ */
+
+:root {
+    --legends-black: #000000;
+    --legends-dark-gray: #1a1a1a;
+    --legends-mid-gray: #333333;
+    --legends-light-gray: #666666;
+    --legends-white: #ffffff;
+    --legends-off-white: #f5f5f5;
+    --legends-overlay: rgba(0, 0, 0, 0.85);
+    --border-radius: 0px;
+    --transition: all 0.3s ease;
+}
+
+/* Global Styles & Typography */
+body {
+    font-family: 'Montserrat', 'Poppins', 'Helvetica Neue', sans-serif;
+    background-color: var(--legends-black);
+    color: var(--legends-off-white);
+    letter-spacing: 0.5px;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Navigation - Bold & Grounded */
+.navbar {
+    background-color: var(--legends-black) !important;
+    border-bottom: 4px solid var(--legends-white);
+    padding: 1rem 2rem;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--legends-white) !important;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.navbar-brand span {
+    color: var(--legends-light-gray);
+}
+
+.navbar-brand i {
+    color: var(--legends-white);
+    margin-right: 10px;
+}
+
+/* Connection Status Badge - Legendary Accent */
+#connectionStatus {
+    background-color: var(--legends-white) !important;
+    color: var(--legends-black);
+    font-weight: 700;
+    padding: 8px 20px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+/* Sidebar - Dark & Textured */
+.sidebar {
+    background-color: var(--legends-dark-gray);
+    border-right: 3px solid var(--legends-white);
+    box-shadow: 5px 0 30px rgba(0, 0, 0, 0.7);
+}
+
+/* Legend Header - Gold Standard */
+.legend-header {
+    background-color: var(--legends-black);
+    border: 2px solid var(--legends-white);
+    padding: 25px 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.legend-header i {
+    color: var(--legends-white);
+    font-size: 2.5rem;
+}
+
+.legend-header h3 {
+    color: var(--legends-white);
+    font-weight: 800;
+    margin-top: 10px;
+    font-size: 1.8rem;
+}
+
+.legend-header p {
+    color: var(--legends-light-gray);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+}
+
+/* Gender Selector - Bold Choices */
+.gender-selector .btn-group {
+    border: 2px solid var(--legends-white);
+}
+
+.gender-selector .btn {
+    background-color: transparent;
+    color: var(--legends-off-white);
+    border: none;
+    padding: 12px 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: var(--transition);
+}
+
+.gender-selector .btn.active {
+    background-color: var(--legends-white);
+    color: var(--legends-black);
+}
+
+.gender-selector .btn:first-child {
+    border-right: 1px solid var(--legends-white);
+}
+
+/* Haircut Gallery - Industrial Strength */
+.haircut-gallery {
+    background-color: var(--legends-black);
+    border: 1px solid var(--legends-light-gray);
+    padding: 20px;
+    max-height: 450px;
+    overflow-y: auto;
+}
+
+.haircut-item {
+    background-color: var(--legends-dark-gray);
+    border: 2px solid transparent;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.haircut-item:hover {
+    border-color: var(--legends-white);
+    transform: scale(1.02);
+}
+
+.haircut-item.selected {
+    border-color: var(--legends-white);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+}
+
+.haircut-item img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: var(--transition);
+}
+
+.haircut-item:hover img {
+    filter: grayscale(50%);
+}
+
+.haircut-item p {
+    color: var(--legends-white);
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Custom Upload - Call to Action */
+.custom-file-upload label {
+    background-color: var(--legends-black);
+    color: var(--legends-white);
+    border: 2px solid var(--legends-white);
+    padding: 15px 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: var(--transition);
+    width: 100%;
+    text-align: center;
+}
+
+.custom-file-upload label:hover {
+    background-color: var(--legends-white);
+    color: var(--legends-black);
+    border-color: var(--legends-black);
+}
+
+/* Adjustment Controls - Premium Finish */
+.adjustment-controls {
+    background-color: var(--legends-black);
+    border: 1px solid var(--legends-light-gray);
+    padding: 25px 20px;
+}
+
+.adjustment-controls h5 {
+    color: var(--legends-white);
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid var(--legends-white);
+    padding-bottom: 10px;
+}
+
+.adjustment-controls .form-label {
+    color: var(--legends-light-gray);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.adjustment-controls .badge {
+    background-color: var(--legends-white) !important;
+    color: var(--legends-black);
+    font-weight: 700;
+}
+
+/* Range Sliders - Gold Standard */
+.form-range::-webkit-slider-runnable-track {
+    background-color: var(--legends-dark-gray);
+    height: 8px;
+    border: 1px solid var(--legends-light-gray);
+}
+
+.form-range::-webkit-slider-thumb {
+    background-color: var(--legends-white);
+    border: 2px solid var(--legends-black);
+    width: 20px;
+    height: 20px;
+    margin-top: -6px;
+    border-radius: 0;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.form-range:focus::-webkit-slider-thumb {
+    box-shadow: 0 0 15px var(--legends-white);
+}
+
+/* Main Content Area */
+.main-content {
+    background-color: var(--legends-black);
+    padding: 30px;
+}
+
+/* Camera Container - Like a Studio */
+.camera-container {
+    border: 3px solid var(--legends-white);
+    background-color: var(--legends-black);
+    position: relative;
+}
+
+#video, #overlay {
+    border: 1px solid var(--legends-dark-gray);
+}
+
+/* Camera Controls - Command Center */
+.camera-controls {
+    background-color: var(--legends-overlay);
+    border: 2px solid var(--legends-white);
+    padding: 20px;
+    border-radius: 0;
+    backdrop-filter: blur(5px);
+}
+
+.camera-controls button {
+    background-color: transparent;
+    color: var(--legends-off-white);
+    border: 2px solid var(--legends-white);
+    padding: 12px 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    transition: var(--transition);
+    border-radius: 0;
+}
+
+.camera-controls button:hover {
+    background-color: var(--legends-white);
+    color: var(--legends-black);
+    border-color: var(--legends-black);
+    transform: translateY(-2px);
+}
+
+.camera-controls .btn-primary {
+    background-color: var(--legends-white);
+    color: var(--legends-black);
+    border-color: var(--legends-black);
+}
+
+/* Face Status Badge */
+.face-status {
+    background-color: var(--legends-white) !important;
+    color: var(--legends-black);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 25px;
+    border-radius: 0;
+    border: 2px solid var(--legends-black);
+}
+
+/* Selected Style Preview */
+.selected-style-preview .alert {
+    background-color: var(--legends-dark-gray);
+    border: 2px solid var(--legends-white);
+    color: var(--legends-off-white);
+    border-radius: 0;
+}
+
+.selected-style-preview strong {
+    color: var(--legends-white);
+    text-transform: uppercase;
+}
+
+/* Captured Images Gallery */
+.captured-images {
+    background-color: var(--legends-dark-gray);
+    border: 2px solid var(--legends-white);
+    padding: 25px;
+}
+
+.captured-images h4 {
+    color: var(--legends-white);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border-bottom: 2px solid var(--legends-white);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.captured-item {
+    border: 2px solid var(--legends-white);
+    transition: var(--transition);
+    position: relative;
+}
+
+.captured-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+    border-color: var(--legends-light-gray);
+}
+
+.captured-item img {
+    border: 3px solid var(--legends-black);
+}
+
+.captured-item button {
+    border-radius: 0;
+    border: 2px solid var(--legends-white);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    padding: 5px 10px;
+}
+
+.captured-item .btn-primary {
+    background-color: var(--legends-white);
+    color: var(--legends-black);
+    border-color: var(--legends-black);
+}
+
+.captured-item .btn-danger {
+    background-color: transparent;
+    color: var(--legends-off-white);
+    border-color: #666666;
+}
+
+.captured-item .btn-danger:hover {
+    background-color: #666666;
+    color: var(--legends-white);
+}
+
+/* Loading Spinner */
+.loading-spinner {
+    background-color: var(--legends-overlay);
+    backdrop-filter: blur(5px);
+}
+
+.spinner-border {
+    color: var(--legends-white) !important;
+    width: 4rem;
+    height: 4rem;
+}
+
+/* Toast Notifications */
+.toast {
+    background-color: var(--legends-black) !important;
+    border: 2px solid var(--legends-white) !important;
+    border-radius: 0 !important;
+}
+
+.toast-header {
+    background-color: transparent !important;
+    color: var(--legends-white) !important;
+    border-bottom: 1px solid var(--legends-white) !important;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.toast-body {
+    color: var(--legends-off-white) !important;
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--legends-black);
+    border-left: 1px solid var(--legends-light-gray);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--legends-light-gray);
+    border: 2px solid var(--legends-black);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--legends-white);
+}
+
+/* Buttons - Global Style */
+.btn {
+    border-radius: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 12px 25px;
+    transition: var(--transition);
+}
+
+.btn-outline-danger {
+    border: 2px solid #666666;
+    color: var(--legends-off-white);
+}
+
+.btn-outline-danger:hover {
+    background-color: #666666;
+    border-color: #666666;
+    color: var(--legends-white);
+}
+
+/* Text Utilities */
+.text-muted {
+    color: var(--legends-light-gray) !important;
+    opacity: 1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+    
+    .camera-controls {
+        flex-direction: column;
+        width: 90%;
+    }
+    
+    .camera-controls button {
+        width: 100%;
+        margin: 5px 0;
+    }
+    
+    .legend-header h3 {
+        font-size: 1.4rem;
+    }
+}
+
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Poppins:wght@400;600;700&display=swap');
